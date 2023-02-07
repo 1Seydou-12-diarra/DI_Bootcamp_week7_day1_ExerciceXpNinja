@@ -35,7 +35,6 @@ class User {
   $user1->firstName = "jane";
   $user1->hello() -> register() -> mail();
 
-  
  }
  test();
 
