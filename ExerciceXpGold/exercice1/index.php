@@ -31,6 +31,7 @@ class User {
   }
 }
  function test(){
+
   $user1 = new User("Diarrassouba");
   $user1->firstName = "jane";
   $user1->hello() -> register() -> mail();
