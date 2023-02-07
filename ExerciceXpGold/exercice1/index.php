@@ -4,6 +4,12 @@ class User {
   public $firstName;
  
   // Une méthode qui dit bonjour à l'utilisateur $firstName.
+  public function __construct($firstName)
+  {
+    
+   $this->$firstName = $firstName ;
+ }
+  
   public function hello()
   {
     echo "hello, " .  $this -> firstName;
@@ -24,10 +30,18 @@ class User {
     echo " >> email sent";
   }
 }
+ function test(){
+  $user1 = new User("Diarrassouba");
+  $user1->firstName = "jane";
+  $user1->hello() -> register() -> mail();
+
+  
+ }
+ test();
+
+
+
  
-$user1 = new User("Jane");
-$user1 -> firstName ;
- 
-//Enchaînez les méthodes bonjour , registrer et mail
-$user1 -> hello() -> register() -> mail();
+
+
 ?>
